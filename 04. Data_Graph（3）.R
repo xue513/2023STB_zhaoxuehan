@@ -24,6 +24,8 @@ hist(X2023_STB_survey$'연세', main="2023년 경영통계분석2 수강생 연�
 
 #박스플롯
 boxplot(X2023_STB_survey$학년, X2023_STB_survey$연세, main="2023년 경영통계분석2 수강생 연세과 학년비교",col="yellow",names = c("학년","연세"))
+summary(X2023_STB_survey)
+summary(X2023_STB_survey, na.rm=T)
 
 #산점도
 plot(x=X2023_STB_survey$학년, y=X2023_STB_survey$연세, main="2023년 경영통계분석2 수강생 연령과 학년비교")
