@@ -195,7 +195,7 @@ congestion1 %>%
   group_by(line, s80_grade) %>% 
   summarise(n=n())%>%  
   mutate(total=sum(n), pct=round(n/total*100,1))%>%  
-  filter(s80_grade=="caution")%>%  
+  filter(s80_grade=="bad")%>%  
   select(line, s80_grade,n,pct)%>%  
   arrange(desc(pct))%>%  
   head(5)
